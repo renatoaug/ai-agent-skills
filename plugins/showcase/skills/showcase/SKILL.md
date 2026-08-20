@@ -17,7 +17,7 @@ Resolve these before producing anything. Infer what you can from context; ask on
 - **Audience** — client stakeholders, dev team, open-source users, a conference. This sets language, tone, and depth. Present what the audience can *do* with the thing, not how you built it — architecture only appears if the audience is engineers who will operate it.
 - **Format** — video tour / live-demo script / slide deck (see formats below).
 - **Duration** — default 2–4 minutes for video, 10–15 slides for a deck. Shorter than the user fears is almost always right.
-- **Voice** — synthesized narration (TTS) or the user's own voice. If the user narrates, the deliverable shifts: a numbered script plus a silent recording plan, not an assembled video.
+- **Voice** — synthesized narration (TTS), the user's own **cloned voice** (see the cloned-voices section of `references/narration.md` — calibration samples, accent fixes, per-clip validation), or the user's live voice. If the user narrates live, the deliverable shifts: a numbered script plus a silent recording plan, not an assembled video.
 
 ## Step 2 — Build the narrative before touching tools
 
