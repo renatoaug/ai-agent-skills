@@ -1,0 +1,9 @@
+{
+  "name": "showcase",
+  "description": "Generate presentations of software you built — narrated video tours, live-demo scripts, or slide decks — for client deliveries, releases, and open-source projects.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Renato Augusto",
+    "url": "https://github.com/renatoaug"
+  }
+}

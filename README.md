@@ -13,6 +13,7 @@ Personal collection of [Claude Code](https://claude.com/claude-code) agent skill
 
 | Plugin | Skill | What it does |
 | ------ | ----- | ------------ |
+| `showcase` | `showcase` | Generates a presentation of software you built — a client delivery, a release, an open-source project — as a narrated video tour, a live-demo script, or a slide deck. |
 
 ## Layout
 
