@@ -1,20 +1,20 @@
 # ai-agent-skills
 
-Personal collection of [Claude Code](https://claude.com/claude-code) agent skills, packaged as a plugin marketplace.
+Personal collection of [Claude Code](https://claude.com/claude-code) agent skills.
 
 ## Install
 
+Each skill is a directory under `skills/`. To use one, link (or copy) it into your local skills directory:
+
+```bash
+git clone git@github.com:renatoaug/ai-agent-skills.git
+ln -s "$(pwd)/ai-agent-skills/skills/showcase" ~/.claude/skills/showcase
 ```
-/plugin marketplace add renatoaug/ai-agent-skills
-/plugin install <plugin>@ai-agent-skills
-```
+
+Claude Code picks it up on the next session; invoke it with `/showcase` or just describe the task.
 
 ## Skills
 
-| Plugin | Skill | What it does |
-| ------ | ----- | ------------ |
-| `showcase` | `showcase` | Generates a presentation of software you built — a client delivery, a release, an open-source project — as a narrated video tour, a live-demo script, or a slide deck. |
-
-## Layout
-
-Each plugin lives under `plugins/<name>/` with its own `.claude-plugin/plugin.json` and `skills/` directory. The marketplace manifest is `.claude-plugin/marketplace.json`.
+| Skill | What it does |
+| ----- | ------------ |
+| [`showcase`](skills/showcase/SKILL.md) | Generates a presentation of software you built — a client delivery, a release, an open-source project — as a narrated video tour, a live-demo script, or a slide deck. |
