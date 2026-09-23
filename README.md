@@ -17,4 +17,5 @@ Claude Code picks it up on the next session; invoke it with `/showcase` or just 
 
 | Skill | What it does |
 | ----- | ------------ |
+| [`docs`](skills/docs/SKILL.md) | Writes and revises documentation for a cold reader — decision records, design notes, READMEs, author guides, doc-site pages, Linear cards and code comments — with a status on every claim and a mandatory consistency pass. |
 | [`showcase`](skills/showcase/SKILL.md) | Generates a presentation of software you built — a client delivery, a release, an open-source project — as a narrated video tour, a live-demo script, or a slide deck. |
