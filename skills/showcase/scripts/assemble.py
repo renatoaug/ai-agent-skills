@@ -26,7 +26,7 @@ for take, beats, tr in SEQ:
     missing = [b for b in beats if b not in at]
     if missing: print("skip (beats not recorded)", take, missing); continue
     start = at[beats[0]]
-    end = min(x["at"] for x in log if x["at"] > at[beats[-1]] and x["id"] in ("#end", "#nav"))
+    end = min(x["at"] for x in log if x["at"] > at[beats[-1]] and (x["id"] in ("#end", "#nav") or not x["id"].startswith("#")))
     end = min(end, dur(mp4))
     for i, bb in enumerate(beats[:-1]):
         if at[bb] + D[bb] + LEAD > at[beats[i + 1]]: print("WARN overlap", take, bb)

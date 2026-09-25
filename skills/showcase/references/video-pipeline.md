@@ -104,7 +104,7 @@ Framing rules the user checks:
 
 ## Assembly (`assemble.py`)
 
-Scenes come from `narration.json`; per take it cuts [first beat → `#end`/`#nav`], overlaps scenes by 0.6 s with the scene's transition, places each clip at scene start + beat offset + 0.25 s, mixes, normalizes loudness, fades in/out. If a rewritten line now outlasts its old take, it freezes the last frame (`tpad`) instead of cutting the voice, and prints `WARN overlap` when a line would run into the next one. `out/vN.mp4.timeline.json` has every beat's time in the final video, for frame QA.
+Scenes come from `narration.json`; per take it cuts [first beat → the next beat of another scene, `#nav` or `#end`], overlaps scenes by 0.6 s with the scene's transition, places each clip at scene start + beat offset + 0.25 s, mixes, normalizes loudness, fades in/out. If a rewritten line now outlasts its old take, it freezes the last frame (`tpad`) instead of cutting the voice, and prints `WARN overlap` when a line would run into the next one. `out/vN.mp4.timeline.json` has every beat's time in the final video, for frame QA.
 
 ## QA per round (all four, every round)
 
@@ -126,4 +126,5 @@ Scenes come from `narration.json`; per take it cuts [first beat → `#end`/`#nav
 | TTS reads "SaaS" as S-A-A-S, merges "No Thanos" | Engine quirks | Rephrase ("na nossa hospedagem"); acronyms the viewer must hear letter by letter: `O.I.D.C.`, `S.C.I.M.` |
 | Transcript shows "Tenon .org", "alta zero", "Cloud" | Whisper bias on names | Not a voice problem; accept if the ratio holds |
 | Page looks shifted right in the user's Chrome during CDP takes | The tab is emulated at 1920×1080 inside a bigger window | Expected; the recording is correct. Close leftover `about:blank` tabs after takes |
+| Scene ends while the CLI is still "thinking" | Turn end detected by `esc to interrupt` disappearing; newer Claude Code does not always print it | `terminal.mjs` `answered()` waits for the `✻ … · done` line. If a take already ended early, `claude --resume` reopens the real transcript for a short follow-up scene |
 | Product bugs found mid-production (broken deploy, missing side effect) | The product was already broken | Report with evidence (logs), fix on a branch, the user pushes and deploys (production deploys are theirs) |
