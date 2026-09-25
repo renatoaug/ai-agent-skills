@@ -85,14 +85,27 @@
       if (!text) { e.style.opacity = 0; e.style.transform = 'translateY(30px)'; return; }
       e.innerHTML = `<b>${n}</b><span>${text}</span>`; e.classList.toggle('top', !!window.__capTop); e.style.opacity = 1; e.style.transform = 'none';
     },
-    docRect(el) { // element rect in untransformed document coords, using the live (mid-transition) transform
-      const r = el.getBoundingClientRect();
+    docFromClient(r) { // a viewport rect → untransformed document coords, using the live transform
       const t = getComputedStyle(document.body).transform;
       const M = new DOMMatrix(t === 'none' ? undefined : t).inverse();
       const [ox, oy] = getComputedStyle(document.body).transformOrigin.split(' ').map(parseFloat);
       const inv = (vx, vy) => { const q = M.transformPoint(new DOMPoint(vx - ox, vy + scrollY - oy)); return [q.x + ox, q.y + oy]; };
       const [x1, y1] = inv(r.left, r.top), [x2, y2] = inv(r.right, r.bottom);
       return { x: x1, y: y1, w: x2 - x1, h: y2 - y1 };
+    },
+    docRect(el) { return fx.docFromClient(el.getBoundingClientRect()); },
+    // lines of a code block: from the line containing `needle`, `count` lines down (text ranges, not elements)
+    codeLines(el, needle, count = 1) {
+      const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT); const nodes = []; let full = '';
+      while (walker.nextNode()) { nodes.push([walker.currentNode, full.length]); full += walker.currentNode.data; }
+      const at = full.indexOf(needle); if (at < 0) throw new Error('needle not found: ' + needle);
+      const start = full.lastIndexOf('\n', at) + 1; let end = start;
+      for (let i = 0; i < count; i++) { const n = full.indexOf('\n', end + (i ? 1 : 0)); end = n < 0 ? full.length : n; }
+      const pos = off => { for (let i = nodes.length - 1; i >= 0; i--) if (nodes[i][1] <= off) return [nodes[i][0], off - nodes[i][1]]; };
+      const range = document.createRange(); range.setStart(...pos(start)); range.setEnd(...pos(end));
+      const rs = [...range.getClientRects()].filter(r => r.width > 2);
+      const box = { left: Math.min(...rs.map(r => r.left)) - 6, top: Math.min(...rs.map(r => r.top)) - 2, right: Math.max(...rs.map(r => r.right)) + 6, bottom: Math.max(...rs.map(r => r.bottom)) + 2 };
+      return fx.docFromClient(box);
     },
     cursor(x, y, show = true) { const c = document.getElementById('fx-cur'); c.style.opacity = show ? 1 : 0; c.style.transform = `translate(${x}px,${y}px)`; },
     click() { const c = document.getElementById('fx-cur'); c.classList.remove('click'); void c.offsetWidth; c.classList.add('click'); },

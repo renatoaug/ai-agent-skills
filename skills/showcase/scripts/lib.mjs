@@ -40,3 +40,5 @@ export function svgBox(t, svg, label) {
     return window.__fx.docRect(rects[0][0]);
   }, label);
 }
+// rect of lines inside a code block (<pre>): the line containing `needle`, `count` lines
+export const codeLines = (t, pre, needle, count = 1) => () => pre.evaluate((el, [n, c]) => window.__fx.codeLines(el, n, c), [needle, count]);
