@@ -1,0 +1,14 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "ai-agent-skills",
+  "description": "Personal collection of Claude Code agent skills.",
+  "owner": { "name": "Renato Ames" },
+  "plugins": [
+    {
+      "name": "i-dont-take-coffee-breaks",
+      "description": "Time estimates in agent minutes, not a human team's weeks. Loaded into every session.",
+      "source": "./plugins/i-dont-take-coffee-breaks",
+      "category": "productivity"
+    }
+  ]
+}

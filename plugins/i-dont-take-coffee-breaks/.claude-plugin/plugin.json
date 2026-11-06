@@ -1,0 +1,7 @@
+{
+  "name": "i-dont-take-coffee-breaks",
+  "description": "Size time estimates by how fast a coding agent actually works: a range in minutes for the agent, the user's part named apart, never a human team's weeks.",
+  "author": {
+    "name": "Renato Ames"
+  }
+}
