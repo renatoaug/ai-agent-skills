@@ -1,0 +1,16 @@
+{
+  "bg": "#0f0b09",
+  "s": "#1a1411",
+  "b": "#3a2b23",
+  "acc": "#d97757",
+  "hi": "#f0a173",
+  "fg": "#f6efe8",
+  "mut": "#a89a8e",
+  "warn": "#e8b64c",
+  "hot": "#ef5a3c",
+  "ok": "#7ec77d",
+  "ink": "#1a0f0a",
+  "display": "'Space Grotesk', sans-serif",
+  "body": "Inter, sans-serif",
+  "mono": "'JetBrains Mono', monospace"
+}

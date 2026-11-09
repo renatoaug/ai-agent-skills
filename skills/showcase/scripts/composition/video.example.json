@@ -1,0 +1,16 @@
+{
+  "lang": "en",
+  "beats": [
+    { "id": "b1", "text": "This is Clauddy, a small pet that watches your Claude Code usage." },
+    { "id": "b2", "text": "The card shows the same percentage as the official panel." },
+    { "id": "b3", "text": "And when the session resets." },
+    { "id": "b4", "text": "Its mood follows the session. It works with you, catches fire past ninety percent, and naps when you step away." }
+  ],
+  "scenes": [
+    { "kind": "card", "beats": ["b1"], "title": "Clauddy", "text": "Your Claude Code limit, <b>no surprises.</b>", "media": "assets/hello.webm" },
+    { "kind": "feature", "beats": ["b2", "b3"], "kicker": "Real usage", "title": "The <em>real</em> number.", "media": "assets/numbers.webm",
+      "callouts": [ { "text": "63% · same as the official panel", "tone": "warn", "target": [0.06, 0.52], "beat": "b2" }, { "text": "resets in 2h 13m", "target": [0.06, 0.6], "beat": "b3" } ] },
+    { "kind": "row", "beats": ["b4"], "kicker": "Moods", "title": "It <em>feels</em> your limit.", "size": 84, "tile_h": 300, "items": [
+      { "media": "assets/working.webm", "title": "Working" }, { "media": "assets/fire.webm", "title": "On fire" }, { "media": "assets/sleeping.webm", "title": "Sleeping" } ] }
+  ]
+}
