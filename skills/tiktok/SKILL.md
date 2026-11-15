@@ -35,6 +35,7 @@ Keep the approved export and editable sources. Version new rounds instead of ove
 - Write natural PT-BR. Start with the actual interesting fact or joke; avoid “neste vídeo”, generic hype, long setup, and unsupported superlatives.
 - Verify game identity, footage provenance, release status, outfit names, references, prices, and numerical claims where relevant. Do not present a mod, fan concept, leak, or another game's footage as official gameplay.
 - Let the footage prove the spoken claim. For an outfit showcase, show a short look at the outfit and then combat **wearing that outfit**, rather than holding a rotating 3D model for most of the segment. If matching footage cannot be sourced, say so instead of substituting misleading clips.
+- Use clean footage without source-video/game subtitles, dialogue text, promotional titles, or other readable text competing with our information. Inspect the entire selected interval, including cut edges; choose another clean interval or authorized clip rather than stacking our captions over existing text.
 - Keep useful edits: a criticism that an effect looks bad calls for improving it, not stripping all effects. Use callouts, circles, zooms, and transitions only when they clarify the moment.
 - Avoid arbitrary cutout pictures over gameplay, distracting duplicates, and cropped overlays. Fill the vertical frame intentionally, not with a top-heavy composition and a large unused bottom area.
 - A short video should have a smaller premise, not merely faster narration of a long script. Let the payoff land; avoid a long branded outro.
@@ -45,6 +46,7 @@ The visual standard is **DIN Condensed Bold subtitles at 86 px with a spoken-wor
 
 - Use the approved reference’s font and animation when they are available. Do not invent a font name or claim an exact match from memory. If the font cannot be identified, choose a close licensed alternative and show a sample.
 - Reveal/highlight in sync with speech. The active word should grow and settle smoothly, using the measured vertical-only pulse in the production reference, rather than making the entire sentence bounce or widening the word. Keep glyphs crisp and lines stable.
+- Give each game a complete final sentence with punctuation (a period for a statement). Start the next game's text as a new subtitle group/entrance only when its scene begins. Never combine two games in one caption or let an outgoing caption linger across the game boundary; see the boundary rules in the production reference.
 - Keep titles at a consistent relative size across videos. A previous “increase 20%” was a correction to one export, not an instruction to enlarge every new version by another 20%.
 - Do not pin titles against the top edge or add an unrelated footer. Keep text out of TikTok’s controls and description region, and check the actual mobile preview. Safe areas are a layout check, not a single permanent set of coordinates.
 - For memes with a black text band, center the text vertically **within that band**, not within the whole video. Preserve comfortable padding and leave the joke’s subjects visible.
@@ -91,7 +93,7 @@ Show the final text as a copyable block/message for approval; do not send these 
 
 ## QA and handoff
 
-1. Inspect scene boundaries, subtitle entrances and largest animated words, title placement, first/last frame, and cover crops. Check the subjects in every layout, not just an attractive still.
+1. Inspect scene boundaries, subtitle entrances and largest animated words, title placement, first/last frame, and cover crops. Check the subjects in every layout, not just an attractive still. At every game change, inspect the frames immediately before, at, and after the cut: the outgoing sentence ends with punctuation, its caption clears, and the next game's caption enters separately. Reject source-text flashes anywhere in the selected footage.
 2. Watch the final export end to end with sound when the tools allow it. Check for silent tails, missing narration, clipped words, bad joins, drifting subtitles, and flickering masks. A prior export lost sound after 0:34: always check through the end.
 3. Use technical checks as supporting evidence: duration, dimensions, audio streams, decode errors, narration alignment, and unexpected silence. An audio hash proves preservation, not that the sound is good. A contact sheet does not prove motion is smooth.
 4. If continuous playback or listening is unavailable, say exactly what was and was not checked. Deliver it as a preview, not “fully verified”.

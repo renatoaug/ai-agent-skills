@@ -12,6 +12,7 @@ These are measured renderer settings, not claims about TikTok's universal requir
 - Reference footage processing: centered `crop=ih*4/5:ih`, scale to canvas, `setsar=1`, contrast 1.04, saturation 1.06. Reframe individual clips when a centered crop cuts the important subject; never stretch footage.
 - Hard cuts, with a fast opening montage. Reference first four shots last 1.50, 1.25, 1.25 and 1.16 seconds (5.16 s total). Later shots vary roughly 2–7 s to follow the point. Use these as pacing evidence, not a mandatory cut grid.
 - Show actual matching gameplay/action, not long model rotations or unrelated floating images. For costumes, combat must show the named costume. Trailers can illustrate a game but do not prove a specific bug or claim; label provenance and verify reuse rights.
+- Select footage with no source-video/game subtitles, dialogue text, promotional titles, or other readable text competing with our editorial overlays. Review each whole selected interval and its first/last frames for brief text flashes. Replace a contaminated interval with clean, authorized footage; do not mask the problem by adding more text.
 - H.264, CRF 19, preset fast, AAC 192 kb/s, `+faststart`. Preserve 30 fps. Confirm compatible pixel format in the export rather than assuming it from codec alone.
 - Finish on the spoken payoff/question. The reference renderer has a last-frame padding fallback; do not intentionally add a frozen/silent tail. Verify the real last frame and last spoken word.
 
@@ -30,10 +31,19 @@ All coordinates below refer to the 1080 × 1350 canvas. Scale the entire layout 
 | Word-tile vertical center | y=884 |
 | Group size | max 4 words; split earlier if joined text width exceeds 900 px |
 | Group punctuation break | `.`, `?`, `:` |
-| Group trailing hold | final word end + 0.12 s |
+| Group trailing hold | final word end + 0.12 s, capped at the game/section boundary |
 | Natural spaces | font's measured space advance, NOT manually padded gaps |
 
 Use corrected per-word start/end timestamps, not uniform estimated timing. Preserve accents, punctuation and Unicode. Validate pronunciation and alignment after any narration edit.
+
+### Hard subtitle boundaries between games
+
+- Correct the transcript so each game's final complete sentence ends with punctuation: use a period for a statement, not a dangling comma. Preserve question/exclamation punctuation where appropriate.
+- Partition the corrected word timings by game/section **before** grouping words. A game change is a mandatory group break even when the four-word/900 px limit has not been reached; never append the next game's name or opening words to the previous caption.
+- Use the same frame-aligned boundary for the gameplay section, title change, and subtitle partition. The outgoing group must end no later than that boundary, including its 0.12 s trailing hold. The next group gets a fresh entrance and may appear only at or after its own scene starts, in sync with speech. Do not carry captions across games or show incoming text early.
+- If narration crosses the intended cut, adjust the scene boundary or narration timing first instead of clipping spoken words or forcing unrelated words into one caption. A visual transition must preserve this separation too; do not display both games' captions together.
+
+### Spoken-word pulse
 
 For each word, let `age = time - word_start`. While active (`word_start <= time < max(word_end, word_start + 0.04)`), apply:
 
@@ -91,6 +101,7 @@ Design a new subject-specific cover with readable thumbnail text, inspect full v
 
 - Compare a new preview side-by-side with the approved reference: actual font, title size/ribbon/left offset, subtitle size/baseline, active color, pulse, natural spacing, framing, audio balance and section rustle.
 - Inspect first frame, every title/scene boundary, longest title/word, accented glyphs at peak pulse, and final seconds. Titles must not clip during rotation; subtitles must not jump horizontally.
+- Inspect immediately before, at, and after every game boundary: terminal punctuation is visible, the old caption clears, and the new game starts a separate caption entrance on its own scene. Verify that no source-video text flashes through anywhere in the selected footage.
 - Decode the entire export; verify dimensions, frame rate, video/audio streams, duration, audio peaks and unexpected silence. Corrected timestamps must cover the final spoken word.
 - Watch the entire export with sound when possible. Static images do not validate animation, waveform checks do not validate pronunciation, and hashes do not validate quality. Report any playback/listening limitation explicitly and mark the result as a preview until checked.
 - Keep video, cover, source manifest, research notes, corrected timings and renderer/settings versioned together. Do not share private source assets or secrets in public repositories.
