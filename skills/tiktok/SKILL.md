@@ -20,6 +20,8 @@ Make gaming content that feels made by a gamer, not a generic AI content factory
 
 Resolve the actual reference file, current export, and requested change before editing. Inspect the media, not just its filename or an old recap. When the user asks for “the same vibe”, analyze the narration, phrasing, cuts, typeface, word timing, motion, visual framing, and audio separately.
 
+For new narrated gaming videos, the approved **Decepcionaram** render is the production baseline, not a loose mood board. Reproduce its typography, red left-aligned ribbon, word pulse, framing, narration character, and mix using [references/production.md](references/production.md). Change the topic, footage, script, and cover, not the visual identity. Do not silently return to an older Wolverine export or generic 9:16 template. The reference's 49-second duration and game list are examples, not mandatory content.
+
 Distinguish three formats:
 
 - **Narrated gaming video:** one clear premise, concrete game footage, synchronized animated subtitles, a designed cover.
@@ -39,17 +41,17 @@ Keep the approved export and editable sources. Version new rounds instead of ove
 
 ## Titles and subtitles
 
-The visual standard is **large, readable subtitles with a spoken-word swell/pop**, and **titles slightly smaller than the subtitles**. See [references/production.md](references/production.md) when building or revising the render.
+The visual standard is **DIN Condensed Bold subtitles at 86 px with a spoken-word vertical pulse**, and **68 px titles in the left-aligned red ribbon**, on the reference’s 1080 × 1350 canvas. See [references/production.md](references/production.md) when building or revising the render.
 
 - Use the approved reference’s font and animation when they are available. Do not invent a font name or claim an exact match from memory. If the font cannot be identified, choose a close licensed alternative and show a sample.
-- Reveal/highlight in sync with speech. The active word should grow and settle smoothly, like a small elastic ripple, rather than making the entire sentence bounce. Keep glyphs crisp and lines stable.
+- Reveal/highlight in sync with speech. The active word should grow and settle smoothly, using the measured vertical-only pulse in the production reference, rather than making the entire sentence bounce or widening the word. Keep glyphs crisp and lines stable.
 - Keep titles at a consistent relative size across videos. A previous “increase 20%” was a correction to one export, not an instruction to enlarge every new version by another 20%.
 - Do not pin titles against the top edge or add an unrelated footer. Keep text out of TikTok’s controls and description region, and check the actual mobile preview. Safe areas are a layout check, not a single permanent set of coordinates.
 - For memes with a black text band, center the text vertically **within that band**, not within the whole video. Preserve comfortable padding and leave the joke’s subjects visible.
 
 ## Sound and narration
 
-- Reuse the approved ElevenLabs voice/settings for narrated videos when available; do not substitute a different voice silently. Keep pronunciation natural, and listen to game names before rendering the full sequence.
+- Use the approved **Sandro Dutra** ElevenLabs voice with **Multilingual v2** for this narrated format; preserve the project’s confirmed voice ID/settings and do not invent unrecorded stability/similarity values. Reuse approved settings when available; do not substitute a different voice silently. Keep pronunciation natural, and listen to game names before rendering the full sequence.
 - Keep source audio for memes unless asked to replace it. Do not add unrelated music during upload.
 - The preferred ElevenLabs credit is a separate description line: `Narração com IA: elevenlabs.io`. Apply it only when that service was used. Do not add the voice's name or the credit to every meme/photo post.
 - Confirm current voice usage rights and attribution requirements for the actual plan and intended use. Attribution is not a substitute for a commercial license.
