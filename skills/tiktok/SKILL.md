@@ -30,6 +30,14 @@ Distinguish three formats:
 
 Keep the approved export and editable sources. Version new rounds instead of overwriting the only good copy. Record the font, sizes, positions, timings, source clips, narration settings, and cover selection in the project so the next video can genuinely reuse them.
 
+## Source actual gameplay before asking the owner
+
+For a narrated video, find the footage yourself unless Renato has already supplied the intended source. Start with the prior project's clip notes and approved assets, then search official game/dev media, footage libraries with explicit reuse terms, and creator captures with permission or a compatible license. Search for the action or UI that proves the point, not just the game's name. A clip being public or used in a prior edit does not establish permission for a new use.
+
+Before locking narration, make a shot list: each factual beat, its source and time range, what appears in the frame, and the basis for reuse in this post. Watch each selected interval and confirm that the action and payoff remain visible after the reference crop. In a trophy guide, the real progress or trophy screen can be the evidence: keep the essential UI readable and place captions away from it; unrelated dialogue, subtitles and watermarks still compete with the edit.
+
+If an exact shot cannot be verified or reused, first narrow the angle to what suitable gameplay actually shows, preserving the game and topic Renato chose. Do not replace gameplay with silent cards or ask him to record by default. Ask for a specific missing clip only if a focused sourcing pass and a narrower cut cannot solve it. State what is missing; don't present a mismatched clip as evidence.
+
 ## Editorial and editing style
 
 - Write natural PT-BR. Start with the actual interesting fact or joke; avoid “neste vídeo”, generic hype, long setup, and unsupported superlatives.
