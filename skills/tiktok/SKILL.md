@@ -30,6 +30,22 @@ Distinguish three formats:
 
 Keep the approved export and editable sources. Version new rounds instead of overwriting the only good copy. Record the font, sizes, positions, timings, source clips, narration settings, and cover selection in the project so the next video can genuinely reuse them.
 
+## Write the script first, then source gameplay
+
+For a narrated video, research the claims and write the full narration first. Then find footage yourself for each beat, unless Renato has already supplied the intended source. Start with the prior project's clip notes and approved assets, then search official game/dev media, footage libraries with explicit reuse terms, and creator captures with permission or a compatible license. Search for the action or UI that proves the point, not just the game's name. A clip being public or used in a prior edit does not establish permission for a new use.
+
+Turn that script into a shot list: each factual beat, its source and time range, what appears in the frame, and the basis for reuse in this post. Watch each selected interval and confirm that the action and payoff remain visible after the reference crop. In a trophy guide, the real progress or trophy screen can be the evidence: keep the essential UI readable and place captions away from it; unrelated dialogue, subtitles and watermarks still compete with the edit.
+
+If an exact shot cannot be verified or reused, first narrow the angle to what suitable gameplay actually shows, preserving the game and topic Renato chose. Do not replace gameplay with silent cards or ask him to record by default. Ask for a specific missing clip only if a focused sourcing pass and a narrower cut cannot solve it. State what is missing; don't present a mismatched clip as evidence.
+
+## Transitions between list items
+
+For a narrated list in the style of **5 Aberturas Inesquecíveis**, use one short glitch when changing from one game to the next. The reference is a horizontal signal tear with a brief red/cyan edge split and a little vertical displacement, about **five frames at 30 fps**. Recreate the look with an original effect when the supplied template is unavailable, incompatible or not cleared for use; do not depend on the template file.
+
+- Put the glitch in the short gap after the outgoing phrase and before the next one. Clear the outgoing caption, keep the transition free of text distortion, and start the next title and caption cleanly on its own gameplay. Adjust the edit or pause to fit, never clip speech or add a conspicuous silent hold. Keep the normal title animation separate from the glitch.
+- Use the glitch only at item boundaries, not on the hook montage, inside a game, or on the closing question. Within an item, match the footage to the phrase with a clean cut when the image needs to change. For example, in **BioShock** show the crash and lighthouse first, then cut to the real underwater Rapture skyline on “uma cidade no fundo do mar.” This changes the shot, not the list item.
+- Review immediately before, during, and after each glitch and time the internal cuts against the actual spoken phrase. Keep source attribution and reuse requirements intact; an edit with no visible credits needs sources that allow that treatment.
+
 ## Editorial and editing style
 
 - Write natural PT-BR. Start with the actual interesting fact or joke; avoid “neste vídeo”, generic hype, long setup, and unsupported superlatives.
