@@ -40,11 +40,11 @@ If an exact shot cannot be verified or reused, first narrow the angle to what su
 
 ## Transitions between list items
 
-For a narrated list in the style of **5 Aberturas Inesquecíveis**, use one short glitch when changing from one game to the next. The reference is a horizontal signal tear with a brief red/cyan edge split and a little vertical displacement, about **five frames at 30 fps**. Recreate the look with an original effect when the supplied template is unavailable, incompatible or not cleared for use; do not depend on the template file.
+For a narrated gaming list, use the **PS Plus December** glitch when one game gives way to the next: one **nine-frame beat at 30 fps (0.30 s)**, with stronger horizontal tearing, a noticeable RGB edge split, brief vertical displacement, and one synchronized digital glitch sound. This supersedes the quieter five-frame version from **5 Aberturas Inesquecíveis**. Recreate it with an original effect and sound; the downloaded template is not required. See [references/production.md](references/production.md#list-item-glitch).
 
-- Put the glitch in the short gap after the outgoing phrase and before the next one. Clear the outgoing caption, keep the transition free of text distortion, and start the next title and caption cleanly on its own gameplay. Adjust the edit or pause to fit, never clip speech or add a conspicuous silent hold. Keep the normal title animation separate from the glitch.
-- Use the glitch only at item boundaries, not on the hook montage, inside a game, or on the closing question. Within an item, match the footage to the phrase with a clean cut when the image needs to change. For example, in **BioShock** show the crash and lighthouse first, then cut to the real underwater Rapture skyline on “uma cidade no fundo do mar.” This changes the shot, not the list item.
-- Review immediately before, during, and after each glitch and time the internal cuts against the actual spoken phrase. Keep source attribution and reuse requirements intact; an edit with no visible credits needs sources that allow that treatment.
+- Place it in the gap after the outgoing phrase and before the next one. Clear the outgoing caption first. The transition uses clean gameplay pixels only; the incoming title, game cover and subtitles start after it. Adjust the cut or pause if needed; never cut speech off to fit.
+- Use it only between list items, never on the hook montage, within a game, on a cover entrance by itself, or on the closing question. Within an item, use clean cuts that match the spoken beat. In **BioShock**, for example, show the crash and lighthouse first, then cut to the real underwater Rapture skyline on “uma cidade no fundo do mar.” It's still the same game.
+- Make the tear easy to see against both bright and dark gameplay, without a white flash or a strobe. Use just one short glitch sound, clearly audible under the mix, not a glitch plus the default page-turn rustle. Verify the visual and sound together immediately before, during and after every boundary. Keep source attribution and reuse requirements intact.
 
 ## Editorial and editing style
 
