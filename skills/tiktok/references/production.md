@@ -70,6 +70,13 @@ Render each word into a padded transparent tile: 18 px padding, full font ascent
 
 The coordinates are the approved composition, not guaranteed TikTok-safe coordinates for every device. Check the actual mobile upload preview, controls, description overlap and profile crop; seek approval if a different placement/aspect ratio is needed. Do not add an unrelated bottom label.
 
+## List-item glitch
+
+- **PS Plus December** is the reference for the stronger gaming-list transition. At 30 fps, use **9 frames (0.30 s)**: 4 from the tail of the outgoing clean shot and 5 from the head of the incoming clean shot. The source cut sits between the two peak frames, with strength rising into it and falling out. Do not tear through editorial overlays; let the title, cover and caption enter on the clean new shot.
+- Useful 1080 × 1350 starting settings: vary horizontal bands up to roughly ±177 px at peak, split the red and blue channels around green by about 19 px (vary slightly by line), and briefly roll the picture vertically. Add a few dark signal-drop scanlines instead of a white flash. Taper the offsets and channel split at both ends. These values are a starting point; the cut should read clearly at phone size.
+- Start an **original 0.30 s digital glitch sound** on the first effect frame. A short descending tone mixed with gated, filtered noise, with quick fades at both ends, can reproduce the PS Plus sound. Use stereo at 48 kHz; set its level by listening with the music bed and adjacent narration. Do not stack it with the page-turn rustle or let it mask either spoken phrase.
+- Apply only between games in a narrated list. No equivalent effect is required within a game, in the opening montage, or on the closing question. The Decepcionaram page-turn sound below describes its own format, not an extra cue for this transition.
+
 ## Narration, music and page-turn sound
 
 - Approved voice: **Sandro Dutra**, ElevenLabs **Multilingual v2**. Reuse the confirmed voice identifier and generation settings from the authorized project/account. No stability, similarity or speed values were established by the inspected render, so do not invent defaults under the guise of matching it.
@@ -99,9 +106,9 @@ Design a new subject-specific cover with readable thumbnail text, inspect full v
 
 ## Required QA and handoff
 
-- Compare a new preview side-by-side with the approved reference: actual font, title size/ribbon/left offset, subtitle size/baseline, active color, pulse, natural spacing, framing, audio balance and section rustle.
+- Compare a new preview side-by-side with the approved reference: actual font, title size/ribbon/left offset, subtitle size/baseline, active color, pulse, natural spacing, framing, audio balance and the cue appropriate to the format (list glitch or reference rustle).
 - Inspect first frame, every title/scene boundary, longest title/word, accented glyphs at peak pulse, and final seconds. Titles must not clip during rotation; subtitles must not jump horizontally.
-- Inspect immediately before, at, and after every game boundary: terminal punctuation is visible, the old caption clears, and the new game starts a separate caption entrance on its own scene. Verify that no source-video text flashes through anywhere in the selected footage.
+- Inspect immediately before, at, and after every game boundary: terminal punctuation is visible, the old caption clears, and the new game starts a separate caption entrance on its own scene. For the list glitch, verify its clean edges and one synchronized sound cue at each game change. Verify that no source-video text flashes through anywhere in the selected footage.
 - Decode the entire export; verify dimensions, frame rate, video/audio streams, duration, audio peaks and unexpected silence. Corrected timestamps must cover the final spoken word.
 - Watch the entire export with sound when possible. Static images do not validate animation, waveform checks do not validate pronunciation, and hashes do not validate quality. Report any playback/listening limitation explicitly and mark the result as a preview until checked.
 - Keep video, cover, source manifest, research notes, corrected timings and renderer/settings versioned together. Do not share private source assets or secrets in public repositories.
